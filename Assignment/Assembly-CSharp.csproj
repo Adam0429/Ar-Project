@@ -107,6 +107,7 @@
     <Compile Include="Assets\EasyTouch\Plugins\MovingJoystick.cs" />
     <Compile Include="Assets\EasyTouch\Plugins\VirtualScreen.cs" />
     <Compile Include="Assets\myscript\changeanimation.cs" />
+    <Compile Include="Assets\myscript\EasyTouchTest.cs" />
     <Compile Include="Assets\SoldierFree\AttachWeapon.cs" />
     <Compile Include="Assets\Test.cs" />
     <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
