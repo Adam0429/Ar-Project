@@ -25,6 +25,7 @@ namespace Vuforia.EditorClasses
         {
             EditorApplication.update += UpdatePluginSettings;
             EditorApplication.update += UpdatePlayerSettings;
+            
         }
 
         static void UpdatePluginSettings()

@@ -1,13 +1,11 @@
 ﻿<Properties StartupConfiguration="{55A6F013-71BA-212A-A5A1-A8C0179D0F5F}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/myscript/changeanimation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/Android/AndroidManifest.xml">
     <Files>
-      <File FileName="Assets/Vuforia/Scripts/DefaultInitializationErrorHandler.cs" Line="74" Column="1" />
-      <File FileName="Assets/Vuforia/Scripts/VuforiaBehaviour.cs" Line="36" Column="16" />
-      <File FileName="Assets/Vuforia/Scripts/BackgroundPlaneBehaviour.cs" Line="1" Column="1" />
-      <File FileName="Assets/Vuforia/Scripts/Utilities/VRIntegrationHelper.cs" Line="116" Column="23" />
-      <File FileName="Assets/Vuforia/Scripts/DefaultTrackableEventHandler.cs" Line="1" Column="1" />
-      <File FileName="Assets/myscript/changeanimation.cs" Line="6" Column="8" />
+      <File FileName="Assets/Vuforia/Scripts/DefaultTrackableEventHandler.cs" Line="107" Column="1" />
+      <File FileName="Assets/myscript/changeanimation.cs" Line="32" Column="35" />
+      <File FileName="Assets/myscript/MoveController.cs" Line="68" Column="6" />
+      <File FileName="Assets/Plugins/Android/AndroidManifest.xml" Line="41" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

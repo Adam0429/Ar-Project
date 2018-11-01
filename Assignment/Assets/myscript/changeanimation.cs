@@ -26,4 +26,9 @@ public class changeanimation : MonoBehaviour {
     {
         animator.SetTrigger("throw");
     }
+
+    public void buttondeath()
+    {
+        animator.SetTrigger("death");
+    }
 }
