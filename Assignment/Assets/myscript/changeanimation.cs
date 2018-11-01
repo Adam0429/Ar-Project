@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class changeanimation : MonoBehaviour {
-    public GameObject samuzai;
+    //public GameObject samuzai;
     Animator animator;
     // Use this for initialization
     void Start () {
-        samuzai = GameObject.Find("samuzai");
+        //samuzai = GameObject.Find("samuzai");
         animator = this.GetComponent<Animator>();
     }
 
@@ -17,12 +17,13 @@ public class changeanimation : MonoBehaviour {
 
 
     }
-    public void buttonattach(){
-        animator.SetTrigger("attach");      
+    public void buttonshoot(){
+        animator.SetTrigger("shoot");
+
     }
 
-    public void buttonrun()
+    public void buttonthrow()
     {
-        animator.SetTrigger("run");
+        animator.SetTrigger("throw");
     }
 }
