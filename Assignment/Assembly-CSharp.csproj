@@ -107,7 +107,6 @@
     <Compile Include="Assets\EasyTouch\Plugins\MovingJoystick.cs" />
     <Compile Include="Assets\EasyTouch\Plugins\VirtualScreen.cs" />
     <Compile Include="Assets\myscript\changeanimation.cs" />
-    <Compile Include="Assets\myscript\MoveController.cs" />
     <Compile Include="Assets\SoldierFree\AttachWeapon.cs" />
     <Compile Include="Assets\Test.cs" />
     <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
@@ -159,16 +158,16 @@
     <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>/Users/wangfeihong/Desktop/ar-project/Assignment/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>/Users/wangfeihong/unity workspace/Assignment/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/wangfeihong/Desktop/ar-project/Assignment/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/wangfeihong/unity workspace/Assignment/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/wangfeihong/Desktop/ar-project/Assignment/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/wangfeihong/unity workspace/Assignment/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/wangfeihong/Desktop/ar-project/Assignment/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/wangfeihong/unity workspace/Assignment/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -366,7 +365,7 @@
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>/Users/wangfeihong/Desktop/ar-project/Assignment/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
+      <HintPath>/Users/wangfeihong/unity workspace/Assignment/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>/Users/wangfeihong/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>

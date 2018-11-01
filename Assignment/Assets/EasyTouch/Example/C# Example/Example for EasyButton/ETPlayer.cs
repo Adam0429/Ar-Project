@@ -38,8 +38,8 @@ public class ETPlayer : MonoBehaviour {
 	}
 	
 	void Start(){
-		model = transform.FindChild("Model").transform;	
-		gun = transform.FindChild("Gun").transform;	
+		model = transform.Find("Model").transform;	
+		gun = transform.Find("Gun").transform;	
 	}
 	
 	void On_JoystickMove( MovingJoystick move){
@@ -48,13 +48,13 @@ public class ETPlayer : MonoBehaviour {
 		transform.rotation  = Quaternion.Euler( new Vector3(0,angle,0));
 		transform.Translate( Vector3.forward * move.joystickValue.magnitude * Time.deltaTime);	
 		
-		model.animation.CrossFade("Run");
+		model.GetComponent<Animation>().CrossFade("Run");
 
 	}
 	
 	void On_JoystickMoveEnd (MovingJoystick move)
 	{
-		model.animation.CrossFade("idle");
+		model.GetComponent<Animation>().CrossFade("idle");
 	}
 	
 	/*
