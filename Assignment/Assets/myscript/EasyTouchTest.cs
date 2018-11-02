@@ -14,22 +14,22 @@ public class EasyTouchTest : MonoBehaviour
     //当摇杆可用时注册事件
     void OnEnable()
     {
-        EasyJoystick.On_JoystickMove += OnJoystickMove;
-        EasyJoystick.On_JoystickMoveEnd += OnJoystickMoveEnd;
+        EasyJoystick.On_JoystickTouchUp+= OnJoystickMove;
+        //EasyJoystick.On_JoystickMoveEnd += OnJoystickMoveEnd;
     }
 
     //当摇杆不可用时移除事件
     void OnDisable()
     {
-        EasyJoystick.On_JoystickMove -= OnJoystickMove;
-        EasyJoystick.On_JoystickMoveEnd -= OnJoystickMoveEnd;
+        //EasyJoystick.On_JoystickMove -= OnJoystickMove;
+        //EasyJoystick.On_JoystickMoveEnd -= OnJoystickMoveEnd;
     }
 
     //当摇杆销毁时移除事件
     void OnDestroy()
     {
-        EasyJoystick.On_JoystickMove -= OnJoystickMove;
-        EasyJoystick.On_JoystickMoveEnd -= OnJoystickMoveEnd;
+        //EasyJoystick.On_JoystickMove -= OnJoystickMove;
+        //EasyJoystick.On_JoystickMoveEnd -= OnJoystickMoveEnd;
     }
 
     //当摇杆处于停止状态时，角色进入待机状态
@@ -37,7 +37,7 @@ public class EasyTouchTest : MonoBehaviour
     {
         if (move.joystickName == "EasyJoystick")
         {
-            animator.SetTrigger("run");
+            animator.SetTrigger("crouch");
         }
     }
 
@@ -57,7 +57,8 @@ public class EasyTouchTest : MonoBehaviour
             //设置角色的朝向（朝向当前坐标+摇杆偏移量）
             transform.LookAt(new Vector3(transform.position.x + joyPositionX, transform.position.y, transform.position.z + joyPositionY));
             //移动玩家的位置（按朝向位置移动）
-            transform.Translate(Vector3.forward * Time.deltaTime * 7.5F);
+            transform.Translate(Vector3.forward * 10);
+            //Debug.Log(transform.localPosition);
             //播放奔跑动画
             animator.SetTrigger("run");
         }
