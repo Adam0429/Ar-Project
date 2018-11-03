@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading;
 
 public class SoldierController : MonoBehaviour {
     GameObject samuzai;
@@ -13,6 +14,7 @@ public class SoldierController : MonoBehaviour {
         samuzai = GameObject.Find("samuzai");
         //soldier = GameObject.Find("Soldier");
         animator = this.GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -24,12 +26,13 @@ public class SoldierController : MonoBehaviour {
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(samuzai.transform.position - transform.position), 1 * Time.deltaTime);
         if (Distance<300){
             buttonshoot();
+            //buttonreload();
         }
         else{
             buttonrun();
         }
-       
     }
+
     public void buttonshoot(){
         animator.SetTrigger("shoot");
 
@@ -43,7 +46,10 @@ public class SoldierController : MonoBehaviour {
     {
         animator.SetTrigger("throw");
     }
-
+    public void buttonreload()
+    {
+        animator.SetTrigger("reload");
+    }
     public void buttondeath()
     {
         animator.SetTrigger("death");

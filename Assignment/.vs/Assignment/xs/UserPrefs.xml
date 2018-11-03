@@ -1,14 +1,13 @@
 ﻿<Properties StartupConfiguration="{55A6F013-71BA-212A-A5A1-A8C0179D0F5F}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/myscript/blood.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/myscript/SoldierController.cs">
     <Files>
       <File FileName="Assets/Vuforia/Scripts/DefaultTrackableEventHandler.cs" Line="107" Column="1" />
       <File FileName="Assets/myscript/EasyTouchTest.cs" Line="61" Column="48" />
-      <File FileName="Assets/myscript/BloodBarTest.cs" Line="54" Column="8" />
       <File FileName="Assets/Plugins/Android/AndroidManifest.xml" Line="12" Column="36" />
-      <File FileName="Assets/myscript/SoldierController.cs" Line="31" Column="8" />
+      <File FileName="Assets/myscript/SoldierController.cs" Line="33" Column="10" />
       <File FileName="Assets/myscript/SamuzaiController.cs" Line="17" Column="1" />
-      <File FileName="Assets/myscript/blood.cs" Line="14" Column="13" />
+      <File FileName="Assets/myscript/blood.cs" Line="17" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
