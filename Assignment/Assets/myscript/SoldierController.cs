@@ -7,6 +7,7 @@ public class SoldierController : MonoBehaviour {
     GameObject soldier;
     Animator animator;
     float Distance;
+    Vector3 minus;
     // Use this for initialization
     void Start () {
         samuzai = GameObject.Find("samuzai");
@@ -17,17 +18,17 @@ public class SoldierController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        minus = this.transform.position - samuzai.transform.position;
         Distance = (this.transform.position - samuzai.transform.position).magnitude;
-        Debug.Log(Distance);
-        if(Distance<500){
+        //this.transform.SetPositionAndRotation(this.transform.localPosition, Quaternion.Euler(new Vector3(minus.x, 0, minus.z)));
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(samuzai.transform.position - transform.position), 1 * Time.deltaTime);
+        if (Distance<300){
             buttonshoot();
         }
         else{
             buttonrun();
         }
-        //Debug.Log("samuzai:"+samuzai.transform.position);
-
-        //Debug.Log(soldier.transform.position);
+       
     }
     public void buttonshoot(){
         animator.SetTrigger("shoot");
