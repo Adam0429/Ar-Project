@@ -6,7 +6,7 @@
 ### unity兼容性并不友好，有些方法已经摒弃却因为版本原因依然存在，需要手动从报错中修改
 ### unity中Animator controller无法给动作添加motion，只需要在这个动作的上级模型里修改Rig参数Animation Type为generic即可
 ### 导入插件时，两个不同版本的插件不能共存。如easytouch移除了多余的一个版本，才能正常使用。
-
+### Has Exit Time的作用 如果我们勾选了该项，在动画转换时会等待当前动画播放完毕才会转换到下一个动画，如果当前动画是循环动画会等待本次播放完毕时转换，所以对于需要立即转换动画的情况时记得要取消勾选。还有一种情况时，当我当前的动画播放完毕后就自动转换到箭头所指的下一个状态（没有其他跳转条件），此时必须勾选该选项，否则动画播放完毕后就会卡在最后一帧，如果是循环动画就会一直循环播放。
 
 
 ## reference links
@@ -25,3 +25,5 @@ https://www.iqiyi.com/w_19rstilnn9.html
 https://www.cnblogs.com/hammerc/p/4828774.html
 
 https://blog.csdn.net/weixin_42513339/article/details/82386009
+
+https://blog.csdn.net/qq_28849871/article/details/77914922
