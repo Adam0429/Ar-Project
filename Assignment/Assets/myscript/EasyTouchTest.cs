@@ -37,7 +37,7 @@ public class EasyTouchTest : MonoBehaviour
     {
         if (move.joystickName == "EasyJoystick")
         {
-            animator.SetTrigger("crouch");
+            //animator.SetTrigger("crouch");
         }
     }
 
