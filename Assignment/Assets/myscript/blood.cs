@@ -15,9 +15,10 @@ public class blood : MonoBehaviour
 
     void Update()
     {
-        Slider.transform.rotation = Camera.main.transform.rotation;
-        Vector3 pos0 = transform.position;
-        Vector3 pos1 = Camera.main.WorldToScreenPoint(pos0);
+        //Slider.transform.rotation = Camera.main.transform.rotation;
+
+        //Vector3 pos0 = transform.position;
+        //Vector3 pos1 = Camera.main.WorldToScreenPoint(pos0);
         //将屏幕坐标转换为NGUI相机的世界坐标。  
         //mSlider.transform.position = UICamera.currentCamera.ScreenToWorldPoint(pos1) + new Vector3(-0.4f, 0.3f, 0);
 

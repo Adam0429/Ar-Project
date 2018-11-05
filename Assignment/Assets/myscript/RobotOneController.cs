@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Threading;
+using UnityEngine.UI;
 
 
 public class RobotOneController : MonoBehaviour
@@ -23,7 +24,7 @@ public class RobotOneController : MonoBehaviour
 
     bool b_Attack;
 
-    public GameObject HPObj;
+    Slider slider;
 
     public GameObject LeftWeapon, RightWeapon;
 
@@ -32,12 +33,12 @@ public class RobotOneController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         life = 100;
-        fireDistance = 13;
+        fireDistance = 130;
         damage = 0.2f;
         rotateSpeed = 1.2f;
         stopRotation = 3f;
         b_Attack = false;
-
+        slider = this.GetComponentInChildren<Slider>();
 
     }
 
@@ -45,7 +46,7 @@ public class RobotOneController : MonoBehaviour
 
     void Update()
     {
-
+        //AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
         if (Robot2.gameObject.activeInHierarchy && RobotTwoController.life > 0)
         {
 
@@ -59,7 +60,7 @@ public class RobotOneController : MonoBehaviour
 
             if (differ.magnitude > stopRotation)
             {
-                //transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotateSpeed);
+                transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotateSpeed);
             }
             else
             {
@@ -99,7 +100,7 @@ public class RobotOneController : MonoBehaviour
             RightWeapon.SetActive(false);
         }
 
-        //HPObj.GetComponent<MeshRenderer>().material.SetFloat("_Float", life);
+        //slider.value = life;
         animator.SetBool("shoot", b_Attack);
     }
 
@@ -108,7 +109,7 @@ public class RobotOneController : MonoBehaviour
     {
         life = 100;
         b_Attack = false;
-        transform.localPosition = Vector3.zero;
+        //transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.Euler(Vector3.zero);
         //Shild.gameObject.SetActive(false);
         LeftWeapon.SetActive(false);
