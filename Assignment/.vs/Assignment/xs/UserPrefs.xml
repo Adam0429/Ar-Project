@@ -1,13 +1,12 @@
 ﻿<Properties StartupConfiguration="{55A6F013-71BA-212A-A5A1-A8C0179D0F5F}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/myscript/RobotTwoController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/myscript/samuzaiblood.cs">
     <Files>
       <File FileName="Assets/Plugins/Android/AndroidManifest.xml" Line="12" Column="36" />
-      <File FileName="Assets/myscript/blood.cs" Line="26" Column="32" />
-      <File FileName="Assets/New Folder/_Complete-Game/Scripts/Player/PlayerHealth.cs" Line="20" Column="23" />
-      <File FileName="Assets/myscript/RobotTwoController.cs" Line="36" Column="27" />
-      <File FileName="Assets/myscript/RobotOneController.cs" Line="102" Column="9" />
-      <File FileName="Assets/myscript/EasyTouchTest.cs" Line="1" Column="1" />
+      <File FileName="Assets/myscript/RobotTwoController.cs" Line="52" Column="19" />
+      <File FileName="Assets/myscript/RobotOneController.cs" Line="48" Column="13" />
+      <File FileName="Assets/myscript/soldierblood.cs" Line="4" Column="1" />
+      <File FileName="Assets/myscript/samuzaiblood.cs" Line="9" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -28,7 +28,7 @@
     <uses-library android:name="com.osterhoutgroup.api.ext" android:required="false" />
     <meta-data android:name="unity.tango-enable" android:value="True" />
     <meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="true" />
-    <meta-data android:name="unity.build-id" android:value="01e242bd-849f-40ea-bd0f-9de350300d33" />
+    <meta-data android:name="unity.build-id" android:value="a80ebb68-2676-4aad-b25f-598056865e6e" />
     <meta-data android:name="unity.splash-mode" android:value="0" />
     <meta-data android:name="unity.splash-enable" android:value="False" />
   </application>

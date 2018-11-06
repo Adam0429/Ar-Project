@@ -29,3 +29,8 @@ https://blog.csdn.net/weixin_42513339/article/details/82386009
 https://blog.csdn.net/qq_28849871/article/details/77914922
 
 http://www.cnblogs.com/hont/p/5099213.html?utm_source=tuicool&utm_medium=referral
+
+https://blog.csdn.net/zzxiang1985/article/details/79418550 血条bug
+
+https://blog.csdn.net/Exclaiming/article/details/80520552 Vuforia移除识别图后，模型还保留在原来的位置。误触了image target里面Extended Tracking
+

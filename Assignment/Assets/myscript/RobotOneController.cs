@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class RobotOneController : MonoBehaviour
 {
-
+    public Transform Robot1;
     public Transform Robot2;
     //public Transform HPBar;
     //public Transform Shild;
@@ -23,18 +23,17 @@ public class RobotOneController : MonoBehaviour
 
 
     bool b_Attack;
-
+    bool death;
     Slider slider;
 
-    public GameObject LeftWeapon, RightWeapon;
 
 
     void Awake()
     {
         animator = GetComponent<Animator>();
         life = 100;
-        fireDistance = 130;
-        damage = 0.2f;
+        fireDistance = 500;
+        damage = 0.1f;
         rotateSpeed = 1.2f;
         stopRotation = 3f;
         b_Attack = false;
@@ -46,17 +45,13 @@ public class RobotOneController : MonoBehaviour
 
     void Update()
     {
-        //AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
-        if (Robot2.gameObject.activeInHierarchy && RobotTwoController.life > 0)
+        if (Robot1.gameObject.activeSelf&&Robot2.gameObject.activeSelf && RobotTwoController.life > 0)
         {
-
             //保持看着敌方机器人
             Quaternion rotation = Quaternion.LookRotation(Robot2.position - transform.position, transform.up);
-            //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Robot2.transform.position - transform.position), 1 * Time.deltaTime);
 
             //rotat差值
             Vector3 differ = transform.rotation.eulerAngles - rotation.eulerAngles;
-
 
             if (differ.magnitude > stopRotation)
             {
@@ -68,40 +63,41 @@ public class RobotOneController : MonoBehaviour
 
                 //计算是否在交火距离
                 float distance = Vector3.Distance(transform.position, Robot2.position);
-
                 if (distance < fireDistance)
                 {
                     b_Attack = true;
-                    LeftWeapon.SetActive(true);
-                    RightWeapon.SetActive(true);
-                    //对敌方造成伤害
-                    RobotTwoController.life -= damage;
 
-                    //当血量低于30，开启防护罩
-                    if (life <= 30)
+                    AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
+                    print(info.normalizedTime);
+                    if (info.normalizedTime > 1.33f && RobotOneController.life > 0)
                     {
-                        //Shild.gameObject.SetActive(true);
+
+                        RobotTwoController.life -= damage;
                     }
+
                 }
                 else
                 {
                     b_Attack = false;
-                    LeftWeapon.SetActive(false);
-                    RightWeapon.SetActive(false);
                 }
             }
 
         }
-        else
-        {
-            b_Attack = false;
-            //Shild.gameObject.SetActive(false);
-            LeftWeapon.SetActive(false);
-            RightWeapon.SetActive(false);
+        if (RobotTwoController.life<=0){
+            animator.SetTrigger("run");
         }
-
-        //slider.value = life;
-        animator.SetBool("shoot", b_Attack);
+        slider.value = life;
+        if (life > 0)
+        {
+            animator.SetBool("shoot", b_Attack);
+        }
+        else{
+            if(death)
+            {
+                animator.SetBool("death", death);
+                death = !death;
+            }
+        }
     }
 
 
@@ -109,11 +105,11 @@ public class RobotOneController : MonoBehaviour
     {
         life = 100;
         b_Attack = false;
+        death = true;
         //transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.Euler(Vector3.zero);
         //Shild.gameObject.SetActive(false);
-        LeftWeapon.SetActive(false);
-        RightWeapon.SetActive(false);
+
     }
 }
 

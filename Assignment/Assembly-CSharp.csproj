@@ -106,11 +106,13 @@
     <Compile Include="Assets\EasyTouch\Plugins\MonoSingleton.cs" />
     <Compile Include="Assets\EasyTouch\Plugins\MovingJoystick.cs" />
     <Compile Include="Assets\EasyTouch\Plugins\VirtualScreen.cs" />
-    <Compile Include="Assets\myscript\blood.cs" />
+    <Compile Include="Assets\myscript\duijiao.cs" />
     <Compile Include="Assets\myscript\EasyTouchTest.cs" />
     <Compile Include="Assets\myscript\NewBehaviourScript.cs" />
     <Compile Include="Assets\myscript\RobotOneController.cs" />
     <Compile Include="Assets\myscript\RobotTwoController.cs" />
+    <Compile Include="Assets\myscript\samuzaiblood.cs" />
+    <Compile Include="Assets\myscript\soldierblood.cs" />
     <Compile Include="Assets\Test.cs" />
     <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
     <Compile Include="Assets\Vuforia\Scripts\CloudRecoBehaviour.cs" />
