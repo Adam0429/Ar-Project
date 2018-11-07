@@ -24,7 +24,7 @@ https://www.iqiyi.com/w_19rstilnn9.html
 
 https://www.cnblogs.com/hammerc/p/4828774.html
 
-https://blog.csdn.net/weixin_42513339/article/details/82386009
+https://blog.csdn.net/weixin_42513339/article/details/82386	009
 
 https://blog.csdn.net/qq_28849871/article/details/77914922
 
@@ -34,3 +34,6 @@ https://blog.csdn.net/zzxiang1985/article/details/79418550 血条bug
 
 https://blog.csdn.net/Exclaiming/article/details/80520552 Vuforia移除识别图后，模型还保留在原来的位置。误触了image target里面Extended Tracking
 
+https://blog.csdn.net/qq_36612824/article/details/83341600 已过时的方法，导致不能正确导包
+
+http://tieba.baidu.com/p/4573360927 esaytouch On_JoystickMove不触发，把interaction type 换成Event Notification就可以了
