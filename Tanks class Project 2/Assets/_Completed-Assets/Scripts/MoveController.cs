@@ -42,7 +42,7 @@ public class MoveController : MonoBehaviour
             //设置角色的朝向（朝向当前坐标+摇杆偏移量）  
             transform.LookAt(new Vector3(transform.position.x + joyPositionX, transform.position.y, transform.position.z + joyPositionY));
             //移动玩家的位置（按朝向位置移动）  
-            transform.Translate(Vector3.forward * Time.deltaTime * 5);
+            transform.Translate(Vector3.forward * Time.deltaTime * 0.2f);
             // Apply this movement to the rigidbody's position.
             //播放奔跑动画  
             //animation.CrossFade("run");
