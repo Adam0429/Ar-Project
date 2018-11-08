@@ -5,7 +5,7 @@ namespace Complete
     public class TankMovement : MonoBehaviour
     {
         public int m_PlayerNumber = 1;              // Used to identify which tank belongs to which player.  This is set by this tank's manager.
-        public float m_Speed = 1000;                 // How fast the tank moves forward and back.
+        public float m_Speed = 0.1f;                 // How fast the tank moves forward and back.
         public float m_TurnSpeed = 180f;            // How fast the tank turns in degrees per second.
         public AudioSource m_MovementAudio;         // Reference to the audio source used to play engine sounds. NB: different to the shooting audio source.
         public AudioClip m_EngineIdling;            // Audio to play when the tank isn't moving.
@@ -76,7 +76,7 @@ namespace Complete
             m_MovementInputValue = Input.GetAxis (m_MovementAxisName);
             m_TurnInputValue = Input.GetAxis (m_TurnAxisName);
 
-            EngineAudio ();
+            //EngineAudio ();
         }
 
 
@@ -119,7 +119,7 @@ namespace Complete
         private void Move ()
         {
             // Create a vector in the direction the tank is facing with a magnitude based on the input, speed and the time between frames.
-            Vector3 movement = transform.forward * m_MovementInputValue * m_Speed * Time.deltaTime;
+            Vector3 movement = transform.forward * m_MovementInputValue * Time.deltaTime;
 
             // Apply this movement to the rigidbody's position.
             m_Rigidbody.MovePosition(m_Rigidbody.position + movement);

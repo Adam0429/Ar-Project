@@ -67,6 +67,7 @@
     <Compile Include="Assets\_Completed-Assets\Scripts\Managers\TankManager.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\MoveController.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Shell\ShellExplosion.cs" />
+    <Compile Include="Assets\_Completed-Assets\Scripts\Tank\Print.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Tank\TankHealth.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Tank\TankMovement.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Tank\TankShooting.cs" />
@@ -117,6 +118,7 @@
     <Compile Include="Assets\EasyTouch\Plugins\MovingJoystick.cs" />
     <Compile Include="Assets\EasyTouch\Plugins\VirtualScreen.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraControl.cs" />
+    <Compile Include="Assets\Scripts\HController.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TankManager.cs" />
     <Compile Include="Assets\Scripts\Shell\ShellExplosion.cs" />
@@ -124,7 +126,6 @@
     <Compile Include="Assets\Scripts\Tank\TankMovement.cs" />
     <Compile Include="Assets\Scripts\Tank\TankShooting.cs" />
     <Compile Include="Assets\Scripts\UI\UIDirectionControl.cs" />
-    <Compile Include="Assets\TutorialInfo\Scripts\TutorialInfo.cs" />
     <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
     <Compile Include="Assets\Vuforia\Scripts\CloudRecoBehaviour.cs" />
     <Compile Include="Assets\Vuforia\Scripts\CylinderTargetBehaviour.cs" />
@@ -166,7 +167,6 @@
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
     <None Include="Assets\EasyTouch\Readme_first.txt" />
     <None Include="Assets\Vuforia\Shaders\RenderVideoBackground.shader" />
-    <None Include="Assets\TutorialInfo\Fonts\LICENSE.txt" />
     <None Include="Assets\readme_SDK.txt" />
     <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
     <None Include="Assets\license_3rdpartynotice.txt" />
@@ -176,16 +176,16 @@
     <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>/Users/wangfeihong/Desktop/ar-project/Tanks class Project 2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>/Users/wangfeihong/Downloads/Tanks class Project 2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/wangfeihong/Desktop/ar-project/Tanks class Project 2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/wangfeihong/Downloads/Tanks class Project 2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/wangfeihong/Desktop/ar-project/Tanks class Project 2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/wangfeihong/Downloads/Tanks class Project 2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/wangfeihong/Desktop/ar-project/Tanks class Project 2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/wangfeihong/Downloads/Tanks class Project 2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -383,7 +383,7 @@
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>/Users/wangfeihong/Desktop/ar-project/Tanks class Project 2/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
+      <HintPath>/Users/wangfeihong/Downloads/Tanks class Project 2/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>/Users/wangfeihong/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>

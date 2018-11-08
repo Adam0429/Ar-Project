@@ -55,7 +55,8 @@ public class GUIEasyTouchInspector : Editor {
 			    	SerializedProperty cameras = serializedObject.FindProperty("nGUICameras");
 					EditorGUILayout.PropertyField( cameras,true);
 			   		serializedObject.ApplyModifiedProperties();
-					EditorGUIUtility.LookLikeControls();
+
+                EditorGUIUtility.LookLikeControls();
 					
 					EditorGUILayout.Space();
 				
