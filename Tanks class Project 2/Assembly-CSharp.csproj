@@ -71,6 +71,7 @@
     <Compile Include="Assets\_Completed-Assets\Scripts\Tank\TankHealth.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Tank\TankMovement.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Tank\TankShooting.cs" />
+    <Compile Include="Assets\_Completed-Assets\Scripts\TankController.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\UI\UIDirectionControl.cs" />
     <Compile Include="Assets\EasyTouch\Example\C# Example\Example for EasyButton\Bullet.cs" />
     <Compile Include="Assets\EasyTouch\Example\C# Example\Example for EasyButton\ETPlayer.cs" />
@@ -162,7 +163,6 @@
     <Compile Include="Assets\Vuforia\Scripts\WireframeTrackableEventHandler.cs" />
     <Compile Include="Assets\Vuforia\Scripts\WordBehaviour.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
-    <None Include="Assets\StreamingAssets\Vuforia\unity.xml" />
     <None Include="Assets\link.xml" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
     <None Include="Assets\EasyTouch\Readme_first.txt" />
@@ -172,6 +172,7 @@
     <None Include="Assets\license_3rdpartynotice.txt" />
     <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
     <None Include="Assets\Fonts\Bowlby_One\OFL.txt" />
+    <None Include="Assets\StreamingAssets\Vuforia\unity.xml" />
     <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
     <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
