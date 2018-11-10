@@ -26,14 +26,14 @@ namespace Complete
         private void Start()
         {
             // Create the delays so they only have to be made once.
-            m_StartWait = new WaitForSeconds (m_StartDelay);
-            m_EndWait = new WaitForSeconds (m_EndDelay);
+            //m_StartWait = new WaitForSeconds (m_StartDelay);
+            //m_EndWait = new WaitForSeconds (m_EndDelay);
 
-            //SpawnAllTanks();
-            //SetCameraTargets();
+            ////SpawnAllTanks();
+            ////SetCameraTargets();
 
-            // Once the tanks have been created and the camera is using them as targets, start the game.
-            StartCoroutine (GameLoop ());
+            //// Once the tanks have been created and the camera is using them as targets, start the game.
+            //StartCoroutine (GameLoop ());
         }
 
 

@@ -26,7 +26,6 @@ public class MoveController : MonoBehaviour
     //移动摇杆中  
     void OnJoystickMove(MovingJoystick move)
     {
-        print("move");
         if (move.joystickName != "MoveJoystick")
         {
             return;
@@ -43,7 +42,7 @@ public class MoveController : MonoBehaviour
     
             this.transform.LookAt(new Vector3(transform.position.x + joyPositionX, transform.position.y, transform.position.z + joyPositionY));
             //移动玩家的位置（按朝向位置移动） 
-            this.transform.Translate(Vector3.forward * Time.deltaTime * 1f);
+            this.transform.Translate(Vector3.forward * Time.deltaTime * 3f);
             // Apply this movement to the rigidbody's position.
             //播放奔跑动画 
             //animation.CrossFade("run");
