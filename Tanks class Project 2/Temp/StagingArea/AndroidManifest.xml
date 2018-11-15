@@ -28,7 +28,7 @@
             To support the ODG R7 in stereo mode we must add the following library.
         -->
     <uses-library android:name="com.osterhoutgroup.api.ext" android:required="false" />
-    <meta-data android:name="unity.build-id" android:value="04f639f8-46e1-4844-84d5-4ec0b248bb2a" />
+    <meta-data android:name="unity.build-id" android:value="1e98f16d-821a-479e-be5a-f790c52b96fd" />
     <meta-data android:name="unity.splash-mode" android:value="0" />
     <meta-data android:name="unity.splash-enable" android:value="True" />
   </application>

@@ -31,4 +31,5 @@ public class fly : MonoBehaviour {
         this.transform.Translate(Vector3.up * Time.deltaTime * 3f);
     }
 
+
 }

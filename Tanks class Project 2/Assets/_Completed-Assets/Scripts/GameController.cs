@@ -16,13 +16,6 @@ public class GameController : MonoBehaviour
 
     public static float life;
 
-    float fireDistance;
-    float damage;
-    float rotateSpeed;
-    float stopRotation;
-
-
-    bool b_Attack;
     bool death;
     Slider slider;
 
@@ -32,19 +25,15 @@ public class GameController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         life = 100;
-        fireDistance = 500;
-        damage = 0.1f;
-        rotateSpeed = 1.2f;
-        stopRotation = 3f;
-        b_Attack = false;
         slider = this.GetComponentInChildren<Slider>();
+        StartCoroutine(RoundStarting());
 
     }
 
 
 
     void Update()
-    {
+    {   
         if (Heli.gameObject.activeSelf && End.gameObject.activeSelf)
         {
 
@@ -58,8 +47,21 @@ public class GameController : MonoBehaviour
             }
 
         }
+    }
 
+    private IEnumerator RoundStarting()
+    {
+        // As soon as the round starts reset the tanks and make sure they can't move.
+        //ResetAllTanks ();
+        //DisableTankControl ();
+        m_MessageText.text = "start!";
 
+        // Snap the camera's zoom and position to something appropriate for the reset tanks.
+        //m_CameraControl.SetStartPositionAndSize ();
 
+        // Increment the round number and display text showing the players what round it is.
+
+        // Wait for the specified length of time until yielding control back to the game loop.
+        yield return new WaitForSeconds(3);
     }
 }
