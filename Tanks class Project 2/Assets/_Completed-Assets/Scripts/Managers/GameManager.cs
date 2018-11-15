@@ -17,8 +17,6 @@ namespace Complete
 
         
         private int m_RoundNumber;                  // Which round the game is currently on.
-        private WaitForSeconds m_StartWait;         // Used to have a delay whilst the round starts.
-        private WaitForSeconds m_EndWait;           // Used to have a delay whilst the round or game ends.
         private bool m_RoundWinner;          // Reference to the winner of the current round.  Used to make an announcement of who won.
         private TankManager m_GameWinner;           // Reference to the winner of the game.  Used to make an announcement of who won.
 
@@ -28,38 +26,27 @@ namespace Complete
         //public Transform HPBar;
         //public Transform Shild;
         Animator animator;
-
+        GameObject Heli1;
         public static float life;
 
-        float fireDistance;
-        float damage;
-        float rotateSpeed;
-        float stopRotation;
-
-
-        bool b_Attack;
+       
         bool death;
         Slider slider;
         private void Start()
         {
-            animator = GetComponent<Animator>();
-            life = 100;
-            fireDistance = 500;
-            damage = 0.1f;
-            rotateSpeed = 1.2f;
-            stopRotation = 3f;
-            b_Attack = false;
+
             slider = this.GetComponentInChildren<Slider>();
             // Create the delays so they only have to be made once.
             //m_StartWait = new WaitForSeconds (m_StartDelay);
             //m_EndWait = new WaitForSeconds (m_EndDelay);
-
+            Heli1 = GameObject.Find("Heli1");
             ////SpawnAllTanks();
             ////SetCameraTargets();
 
             //// Once the tanks have been created and the camera is using them as targets, start the game.
-            StartCoroutine (GameLoop ());
+            StartCoroutine(GameLoop());
             //SceneManager.LoadScene(0);
+
 
         }
 
@@ -76,23 +63,6 @@ namespace Complete
                 m_Tanks[i].m_PlayerNumber = i + 1;
                 m_Tanks[i].Setup();
             }
-        }
-
-
-        private void SetCameraTargets()
-        {
-            // Create a collection of transforms the same size as the number of tanks.
-            Transform[] targets = new Transform[m_Tanks.Length];
-
-            // For each of these transforms...
-            for (int i = 0; i < targets.Length; i++)
-            {
-                // ... set it to the appropriate tank transform.
-                targets[i] = m_Tanks[i].m_Instance.transform;
-            }
-
-            // These are the targets the camera should follow.
-            m_CameraControl.m_Targets = targets;
         }
 
         // This function is to find out if there is a winner of the round.
@@ -117,7 +87,6 @@ namespace Complete
 
             }
             return false;
-            // If none of the tanks are active it is a draw so return null.
         }
 
 
@@ -135,11 +104,15 @@ namespace Complete
             yield return StartCoroutine (RoundEnding());
 
             // This code is not run until 'RoundEnding' has finished.  At which point, check if a game winner has been found.
-            if (GetWin())
-            {
-                // If there is a game winner, restart the level.
-                SceneManager.LoadScene(0);
-            }
+            //if (GetWin())
+            //{
+            //    // If there is a game winner, restart the level.
+
+            //    SceneManager.LoadScene(0);
+            //GameObject Heli1 = GameObject.Find("Heli1");
+            //Heli1.AddComponent<MoveController>();
+            //本来想一局一局的游戏的，结果重新加载scence的时候，报错脚本被销毁
+            //}
             //else
             //{
             //    // If there isn't a winner yet, restart this coroutine so the loop continues.
@@ -193,9 +166,10 @@ namespace Complete
 
             // Get a message based on the scores and whether or not there is a game winner and display it.
             m_MessageText.text = "YOU WIN!\n PREPARE FOR NEXT GAME";
+            Heli1.SetActive(false);
 
             // Wait for the specified length of time until yielding control back to the game loop.
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(100);
         }
 
 
