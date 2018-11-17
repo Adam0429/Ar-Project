@@ -24,7 +24,6 @@ namespace Complete
         public Transform Heli;
         public Transform End;
         public Transform FireWork;
-        private Material HighLightMat;                                         //实现闪烁高亮效果材质球
 
         Animator animator;
         GameObject HeliObject;
@@ -42,7 +41,6 @@ namespace Complete
             //m_EndWait = new WaitForSeconds (m_EndDelay);
             HeliObject = GameObject.Find("Heli1");
             EndObject = GameObject.Find("Helipad");
-            HighLightMat = Resources.Load("_Complete-Game/New Material") as Material;
             ////SpawnAllTanks();
             ////SetCameraTargets();
 
@@ -54,20 +52,6 @@ namespace Complete
         }
 
 
-        private void SpawnAllTanks()
-        {
-            // For all the tanks...
-            for (int i = 0; i < m_Tanks.Length; i++)
-            {
-                // ... create them, set their player number and references needed for control.
-                m_Tanks[i].m_Instance =
-                    Instantiate(m_TankPrefab, m_Tanks[i].m_SpawnPoint.position, m_Tanks[i].m_SpawnPoint.rotation) as GameObject;
-                //m_Tanks[i].m_Instance.transform.localScale = new Vector3(10,10,10);
-                m_Tanks[i].m_PlayerNumber = i + 1;
-                m_Tanks[i].Setup();
-            }
-        }
-
         // This function is to find out if there is a winner of the round.
         // This function is called with the assumption that 1 or fewer tanks are currently active.
         private bool GetWin()
@@ -76,9 +60,11 @@ namespace Complete
             if (Heli.gameObject.activeSelf && End.gameObject.activeSelf)
             {
 
-                float distance = Vector3.Distance(Heli.position, End.position);
+                float distance = Vector2.Distance(new Vector2(Heli.position.x,Heli.position.z),new Vector2(End.position.x,End.position.y));
                 m_MessageText.text = distance.ToString();
-                if (distance < 10 && distance > 0)//when object not render distance is 0
+                //(Heli.GetComponent<MeshFilter>().mesh.bounds.size.x *
+                //distance.ToString();
+                if (EndObject.GetComponent<GetWin>().win)//when object not render distance is 0
                 {
                     return true;
                 }
@@ -167,38 +153,16 @@ namespace Complete
             // Clear the winner from the previous round.
 
             // Get a message based on the scores and whether or not there is a game winner and display it.
-
-            m_MessageText.text = "YOU WIN!\n PREPARE FOR NEXT GAME";
+                
+            m_MessageText.text = "YOU WIN!\n";
 
             //Heli1.SetActive(false);
             Instantiate(FireWork, EndObject.transform.position, EndObject.transform.rotation);
-            EndObject.GetComponent<Renderer>().material = HighLightMat;
             // Wait for the specified length of time until yielding control back to the game loop.
             yield return new WaitForSeconds(100);
         }
 
 
 
-
-        // This function is used to turn all the tanks back on and reset their positions and properties.
-
-
-
-        private void EnableTankControl()
-        {
-            for (int i = 0; i < m_Tanks.Length; i++)
-            {
-                m_Tanks[i].EnableControl();
-            }
-        }
-
-
-        private void DisableTankControl()
-        {
-            for (int i = 0; i < m_Tanks.Length; i++)
-            {
-                m_Tanks[i].DisableControl();
-            }
-        }
     }
 }

@@ -3,21 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class takedamage : MonoBehaviour {
+    private void Update()
+    {
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
-        GameObject.Find("Rocks").SetActive(false);
-        print(collision.transform.name);
-
+        if (collision.transform.name.Contains("CompleteShell")){
+            this.gameObject.SetActive(false);
+        }
     }
-    //private void OnParticleCollision(GameObject other)
-    //{
-    //    print("2222");
 
-    //}
-    //private void OnCollisionExit(Collision collision)
-    //{
-    //    print("2222");
-
-    //}
+   
 }

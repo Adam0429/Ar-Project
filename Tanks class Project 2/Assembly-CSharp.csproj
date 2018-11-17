@@ -61,18 +61,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\_Completed-Assets\Scripts\Camera\CameraControl.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Camera\duijiao.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\fly.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\_Completed-Assets\Scripts\GetWin.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Managers\GameManager.cs" />
-    <Compile Include="Assets\_Completed-Assets\Scripts\Managers\TankManager.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\MoveController.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Shell\ShellExplosion.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\takedamage.cs" />
-    <Compile Include="Assets\_Completed-Assets\Scripts\Tank\Print.cs" />
-    <Compile Include="Assets\_Completed-Assets\Scripts\Tank\TankHealth.cs" />
-    <Compile Include="Assets\_Completed-Assets\Scripts\Tank\TankMovement.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Tank\TankShooting.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\UI\UIDirectionControl.cs" />
     <Compile Include="Assets\EasyTouch\Example\C# Example\Example for EasyButton\Bullet.cs" />
