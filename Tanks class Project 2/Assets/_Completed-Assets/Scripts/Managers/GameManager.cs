@@ -23,14 +23,15 @@ namespace Complete
 
         public Transform Heli;
         public Transform End;
-        //public Transform HPBar;
-        //public Transform Shild;
+        public Transform FireWork;
+        private Material HighLightMat;                                         //实现闪烁高亮效果材质球
+
         Animator animator;
-        GameObject Heli1;
+        GameObject HeliObject;
+        GameObject EndObject;
         public static float life;
 
        
-        bool death;
         Slider slider;
         private void Start()
         {
@@ -39,7 +40,9 @@ namespace Complete
             // Create the delays so they only have to be made once.
             //m_StartWait = new WaitForSeconds (m_StartDelay);
             //m_EndWait = new WaitForSeconds (m_EndDelay);
-            Heli1 = GameObject.Find("Heli1");
+            HeliObject = GameObject.Find("Heli1");
+            EndObject = GameObject.Find("Helipad");
+            HighLightMat = Resources.Load("_Complete-Game/New Material") as Material;
             ////SpawnAllTanks();
             ////SetCameraTargets();
 
@@ -97,7 +100,7 @@ namespace Complete
         private IEnumerator GameLoop ()
         {
             // Start off by running the 'RoundStarting' coroutine but don't return until it's finished.
-            yield return StartCoroutine (RoundStarting ());
+            //yield return StartCoroutine (RoundStarting ());
             // Once the 'RoundStarting' coroutine is finished, run the 'RoundPlaying' coroutine but don't return until it's finished.
             yield return StartCoroutine (RoundPlaying());
             // Once execution has returned here, run the 'RoundEnding' coroutine, again don't return until it's finished.
@@ -145,7 +148,6 @@ namespace Complete
             //EnableTankControl ();
 
             // Clear the text from the screen.
-            //m_MessageText.text = string.Empty;
 
             // While there is not one tank left...
 
@@ -165,9 +167,12 @@ namespace Complete
             // Clear the winner from the previous round.
 
             // Get a message based on the scores and whether or not there is a game winner and display it.
-            m_MessageText.text = "YOU WIN!\n PREPARE FOR NEXT GAME";
-            Heli1.SetActive(false);
 
+            m_MessageText.text = "YOU WIN!\n PREPARE FOR NEXT GAME";
+
+            //Heli1.SetActive(false);
+            Instantiate(FireWork, EndObject.transform.position, EndObject.transform.rotation);
+            EndObject.GetComponent<Renderer>().material = HighLightMat;
             // Wait for the specified length of time until yielding control back to the game loop.
             yield return new WaitForSeconds(100);
         }
