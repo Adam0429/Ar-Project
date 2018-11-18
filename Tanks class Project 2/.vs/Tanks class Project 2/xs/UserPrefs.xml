@@ -7,7 +7,7 @@
       <File FileName="Assets/_Completed-Assets/Scripts/fly.cs" Line="19" Column="1" />
       <File FileName="Assets/_Completed-Assets/Scripts/Tank/TankShooting.cs" Line="46" Column="1" />
       <File FileName="Assets/_Completed-Assets/Scripts/takedamage.cs" Line="14" Column="10" />
-      <File FileName="Assets/_Completed-Assets/Scripts/GetWin.cs" Line="10" Column="64" />
+      <File FileName="Assets/_Completed-Assets/Scripts/GetWin.cs" Line="15" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
