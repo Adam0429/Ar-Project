@@ -1,6 +1,6 @@
 # ar-project
-###用Vuforia制作的一款赛道游戏，主要运用ImageTarget接口，障碍物可自行拼接完成，障碍物为实体，其中石头可被导弹破坏，一些物体不能被破坏，飞机可以飞行，前进，发射导弹，当飞机飞入停机坪，游戏胜利
-###A track game made with Vuforia mainly uses the ImageTarget interface. The obstacles can be stitched together. The obstacles are solid. The stones can be destroyed by missiles. Some objects can not be destroyed. The aircraft can fly, advance, launch missiles. The plane flew into the tarmac and the game triumphed
+### 用Vuforia制作的一款赛道游戏，主要运用ImageTarget接口，障碍物可自行拼接完成，障碍物为实体，其中石头可被导弹破坏，一些物体不能被破坏，飞机可以飞行，前进，发射导弹，当飞机飞入停机坪，游戏胜利
+### A track game made with Vuforia mainly uses the ImageTarget interface. The obstacles can be stitched together. The obstacles are solid. The stones can be destroyed by missiles. Some objects can not be destroyed. The aircraft can fly, advance, launch missiles. The plane flew into the tarmac and the game triumphed
 
 ## some bugs
 
