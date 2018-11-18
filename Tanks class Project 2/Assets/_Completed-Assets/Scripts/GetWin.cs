@@ -7,7 +7,7 @@ public class GetWin : MonoBehaviour {
     public bool win = false;
     private void Update()
     {
-        HighLightMat = HighLightMat = Resources.Load("_Complete-Game/New Material") as Material;
+        HighLightMat = HighLightMat = Resources.Load("_Completed-Assets/Prefabs/New Material") as Material;
 
     }
    
