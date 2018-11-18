@@ -62,14 +62,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Completed-Assets\Scripts\Camera\duijiao.cs" />
-    <Compile Include="Assets\_Completed-Assets\Scripts\fly.cs" />
-    <Compile Include="Assets\_Completed-Assets\Scripts\GameController.cs" />
-    <Compile Include="Assets\_Completed-Assets\Scripts\GetWin.cs" />
+    <Compile Include="Assets\_Completed-Assets\Scripts\helicopter\fly.cs" />
+    <Compile Include="Assets\_Completed-Assets\Scripts\helicopter\flycollider.cs" />
+    <Compile Include="Assets\_Completed-Assets\Scripts\helicopter\MoveController.cs" />
+    <Compile Include="Assets\_Completed-Assets\Scripts\helicopter\TankShooting.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Managers\GameManager.cs" />
-    <Compile Include="Assets\_Completed-Assets\Scripts\MoveController.cs" />
+    <Compile Include="Assets\_Completed-Assets\Scripts\Managers\GetWin.cs" />
+    <Compile Include="Assets\_Completed-Assets\Scripts\Managers\takedamage.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Shell\ShellExplosion.cs" />
-    <Compile Include="Assets\_Completed-Assets\Scripts\takedamage.cs" />
-    <Compile Include="Assets\_Completed-Assets\Scripts\Tank\TankShooting.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\UI\UIDirectionControl.cs" />
     <Compile Include="Assets\EasyTouch\Example\C# Example\Example for EasyButton\Bullet.cs" />
     <Compile Include="Assets\EasyTouch\Example\C# Example\Example for EasyButton\ETPlayer.cs" />
@@ -163,11 +163,11 @@
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\link.xml" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
+    <None Include="Assets\StreamingAssets\Vuforia\unity.xml" />
     <None Include="Assets\EasyTouch\Readme_first.txt" />
     <None Include="Assets\Vuforia\Shaders\RenderVideoBackground.shader" />
     <None Include="Assets\Transport Helicopter\Info Transport Helicopter.txt" />
     <None Include="Assets\readme_SDK.txt" />
-    <None Include="Assets\StreamingAssets\Vuforia\unity.xml" />
     <None Include="Assets\FullTiltBoogie\Helpers\readme.txt" />
     <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
     <None Include="Assets\license_3rdpartynotice.txt" />

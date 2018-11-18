@@ -61,7 +61,7 @@ namespace Complete
             {
 
                 float distance = Vector2.Distance(new Vector2(Heli.position.x,Heli.position.z),new Vector2(End.position.x,End.position.y));
-                m_MessageText.text = distance.ToString();
+                m_MessageText.text = "Fighting!!!";
                 //(Heli.GetComponent<MeshFilter>().mesh.bounds.size.x *
                 //distance.ToString();
                 if (EndObject.GetComponent<GetWin>().win)//when object not render distance is 0
