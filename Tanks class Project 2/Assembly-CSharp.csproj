@@ -64,12 +64,14 @@
     <Compile Include="Assets\_Completed-Assets\Scripts\Camera\duijiao.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\helicopter\fly.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\helicopter\flycollider.cs" />
+    <Compile Include="Assets\_Completed-Assets\Scripts\helicopter\HeliShooting.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\helicopter\MoveController.cs" />
-    <Compile Include="Assets\_Completed-Assets\Scripts\helicopter\TankShooting.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Managers\GetWin.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Managers\takedamage.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Shell\ShellExplosion.cs" />
+    <Compile Include="Assets\_Completed-Assets\Scripts\tank\TankShooting.cs" />
+    <Compile Include="Assets\_Completed-Assets\Scripts\tank\tanktakedamage.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\UI\UIDirectionControl.cs" />
     <Compile Include="Assets\EasyTouch\Example\C# Example\Example for EasyButton\Bullet.cs" />
     <Compile Include="Assets\EasyTouch\Example\C# Example\Example for EasyButton\ETPlayer.cs" />
@@ -178,16 +180,16 @@
     <None Include="Assets\Heli1\Info.txt" />
     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>/Users/wangfeihong/Desktop/ar-project/Tanks class Project 2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>/Users/wangfeihong/Downloads/Tanks class Project 2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/wangfeihong/Desktop/ar-project/Tanks class Project 2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/wangfeihong/Downloads/Tanks class Project 2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/wangfeihong/Desktop/ar-project/Tanks class Project 2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/wangfeihong/Downloads/Tanks class Project 2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/wangfeihong/Desktop/ar-project/Tanks class Project 2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/wangfeihong/Downloads/Tanks class Project 2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -385,7 +387,7 @@
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>/Users/wangfeihong/Desktop/ar-project/Tanks class Project 2/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
+      <HintPath>/Users/wangfeihong/Downloads/Tanks class Project 2/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>/Users/wangfeihong/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>

@@ -1,14 +1,13 @@
 ﻿<Properties StartupConfiguration="{E5197B43-C211-43EB-CDDD-E927BAC41460}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Completed-Assets/Scripts/flycollider.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Completed-Assets/Scripts/tank/TankShooting.cs">
     <Files>
-      <File FileName="Assets/_Completed-Assets/Scripts/Managers/GameManager.cs" Line="101" Column="59" />
-      <File FileName="Assets/_Completed-Assets/Scripts/MoveController.cs" Line="20" Column="10" />
-      <File FileName="Assets/_Completed-Assets/Scripts/fly.cs" Line="19" Column="1" />
-      <File FileName="Assets/_Completed-Assets/Scripts/Tank/TankShooting.cs" Line="46" Column="1" />
-      <File FileName="Assets/_Completed-Assets/Scripts/takedamage.cs" Line="19" Column="1" />
-      <File FileName="Assets/_Completed-Assets/Scripts/GetWin.cs" Line="15" Column="6" />
-      <File FileName="Assets/_Completed-Assets/Scripts/flycollider.cs" Line="10" Column="18" />
+      <File FileName="Assets/_Completed-Assets/Scripts/Managers/GameManager.cs" Line="60" Column="61" />
+      <File FileName="Assets/_Completed-Assets/Scripts/helicopter/HeliShooting.cs" Line="53" Column="1" />
+      <File FileName="Assets/_Completed-Assets/Scripts/Managers/takedamage.cs" Line="19" Column="1" />
+      <File FileName="Assets/_Completed-Assets/Scripts/tank/tanktakedamage.cs" Line="5" Column="18" />
+      <File FileName="Assets/Vuforia/Scripts/Internal/WSAUnityPlayer.cs" Line="145" Column="12" />
+      <File FileName="Assets/_Completed-Assets/Scripts/tank/TankShooting.cs" Line="51" Column="49" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
