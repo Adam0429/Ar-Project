@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class tanktakedamage : MonoBehaviour {
+public class TankTakeDamage : MonoBehaviour {
     public Transform damagedtank;
     private void Update()
     {

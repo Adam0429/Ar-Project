@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class helicollider : MonoBehaviour
+public class Helicollider : MonoBehaviour
 {
     GameObject firework;
     private void Start()
@@ -13,7 +13,8 @@ public class helicollider : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        firework.SetActive(true);
+        if (collision.transform.name.Contains("CompleteShell")) 
+            firework.SetActive(true);
 
     }
 
