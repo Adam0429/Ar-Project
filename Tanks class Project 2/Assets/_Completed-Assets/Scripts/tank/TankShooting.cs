@@ -9,6 +9,7 @@ namespace Complete
         public Rigidbody m_Shell;                   // Prefab of the shell.
         public Transform m_FireTransform;           // A child of the tank where the shells are spawned.
         public Transform Heli;
+        public Transform tank;
 
         public Slider m_AimSlider;                  // A child of the tank that displays the current launch force.
         //public AudioSource m_ShootingAudio;         // Reference to the audio source used to play the shooting audio. NB: different to the movement audio source.
@@ -24,6 +25,8 @@ namespace Complete
         private float m_ChargeSpeed;                // How fast the launch force increases, based on the max charge time.
         private bool m_Fired;                       // Whether or not the shell has been launched with this button press.
         private int count = 1;
+        bool helivisual = false;
+        bool tankvisual = false;
 
         private void OnEnable()
         {
@@ -45,6 +48,8 @@ namespace Complete
 
         private void Update ()
         {
+            helivisual = GameObject.Find("Heli1").GetComponent<HeliCheckViusal>().visual;
+            tankvisual = GameObject.Find("CompleteTank").GetComponent<TankCheckViusal>().visual;
 
             Quaternion rotation = Quaternion.LookRotation(Heli.position - transform.position, transform.up);
 
@@ -60,7 +65,10 @@ namespace Complete
                 count++;
                 if (count % 10 == 1)
                 {
-                    Fire();
+                    if (helivisual&&tankvisual)
+                    {
+                        Fire();
+                    }
                 }
             }
 
@@ -73,6 +81,7 @@ namespace Complete
         {
             // Set the fired flag so only Fire is only called once.
             m_Fired = true;
+
 
             // Create an instance of the shell and store a reference to it's rigidbody.
             Rigidbody shellInstance =

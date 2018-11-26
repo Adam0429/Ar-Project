@@ -10,6 +10,12 @@ public class MoveController : MonoBehaviour
         EasyJoystick.On_JoystickMoveEnd += OnJoystickMoveEnd;
     }
 
+    void OnDestroy()
+    {
+        EasyJoystick.On_JoystickMove -= OnJoystickMove;
+        EasyJoystick.On_JoystickMoveEnd -= OnJoystickMoveEnd;
+    }
+
 
     //移动摇杆结束  
     void OnJoystickMoveEnd(MovingJoystick move)
@@ -48,4 +54,5 @@ public class MoveController : MonoBehaviour
             //animation.CrossFade("run");
         }
     }
+
 }

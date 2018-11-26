@@ -44,3 +44,5 @@ https://blog.csdn.net/Exclaiming/article/details/80520552 Vuforia移除识别图
 https://blog.csdn.net/qq_36612824/article/details/83341600 已过时的方法，导致不能正确导包
 
 http://tieba.baidu.com/p/4573360927 esaytouch On_JoystickMove不触发，把interaction type 换成Event Notification就可以了
+
+https://blog.csdn.net/a949592981/article/details/72718427 重新载入场景后Easytouch不能使用的问题

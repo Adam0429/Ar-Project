@@ -51,7 +51,14 @@ namespace Complete
 
         }
 
-
+        public void Update()
+        {
+            //Renderer[] rendercompent = GetComponentsInChildren<Renderer>();
+            //foreach (Renderer compent in rendercompent)
+            //{
+            //    print("名字："+compent.name);
+            //}
+        }
         // This function is to find out if there is a winner of the round.
         // This function is called with the assumption that 1 or fewer tanks are currently active.
         private bool GetWin()
@@ -161,7 +168,6 @@ namespace Complete
             // Wait for the specified length of time until yielding control back to the game loop.
             yield return new WaitForSeconds(100);
         }
-
 
 
     }
