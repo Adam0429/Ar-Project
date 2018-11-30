@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="stone3" size="50.000000 50.000000" />
+    <ImageTarget name="tank1" size="50.000000 35.299999" />
+    <ImageTarget name="tank2" size="50.000000 35.884693" />
+    <ImageTarget name="tanks" size="50.000000 27.000000" />
+    <ImageTarget name="stone2" size="50.000000 50.000000" />
+    <ImageTarget name="stone" size="50.000000 35.000000" />
+    <ImageTarget name="house" size="50.000000 38.427734" />
+    <ImageTarget name="heli" size="50.000000 50.000000" />
+    <ImageTarget name="pumpjack" size="50.000000 50.000000" />
+    <ImageTarget name="tank" size="50.000000 50.000000" />
+    <ImageTarget name="timg" size="10.000000 9.977777" />
+  </Tracking>
+</QCARConfig>
