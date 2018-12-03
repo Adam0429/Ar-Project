@@ -42,6 +42,7 @@ namespace Complete
         {
             helivisual = GameObject.Find("Heli1").GetComponent<HeliCheckVisual>().visual;
             tankvisual = GameObject.Find("CompleteTank1").GetComponent<TankCheckVisual>().visual;
+            count++;
 
             if (helivisual && tankvisual)
             {
@@ -50,21 +51,22 @@ namespace Complete
 
                 Vector3 differ = transform.rotation.eulerAngles - rotation.eulerAngles;
 
+                if (count % 50 == 1)
+                {
+                    //if (helivisual&&tankvisual)
+                    {
+                        Fire();
+                    }
+                }
                 if (differ.magnitude > 3f)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 1.2f);
+
                 }
                 else
                 {
                     transform.rotation = rotation;
-                    count++;
-                    if (count % 10 == 1)
-                    {
-                        //if (helivisual&&tankvisual)
-                        {
-                            Fire();
-                        }
-                    }
+
                 }
             }
             //}
