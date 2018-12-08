@@ -1,9 +1,9 @@
 # ar-project
 ### 两款游戏 
-### 1.用Vuforia制作的一款赛道游戏，主要运用ImageTarget接口，障碍物可自行拼接完成，障碍物为实体，其中石头可被导弹破坏，一些物体不能被破坏，飞机可以飞行，前进，发射导弹，当飞机飞入停机坪，游戏胜利 
+### 1.用Vuforia制作的一款赛道游戏，主要运用ImageTarget接口，障碍物可自行拼接完成，障碍物为实体，其中石头可被导弹破坏，一些物体不能被破坏，坦克可以射击飞机,飞机可以飞行，前进，发射导弹，当飞机飞入停机坪，游戏胜利 
 ### 2.卡牌对战游戏，士兵和武士，根据距离判定是否攻击，带血条
 ### Two games
-### 1. A track game made with Vuforia, mainly using ImageTarget interface, obstacles can be stitched by themselves, obstacles are solid, where stones can be destroyed by missiles, some objects can not be destroyed, aircraft can fly, advance , launch missiles, when the plane flies into the tarmac, the game wins
+### 1. A track game made with Vuforia, mainly using ImageTarget interface, obstacles can be destroyed by themselves,tanks can shoot plane, obstacles are solid, where stones can be destroyed by missiles, some objects can not be destroyed, aircraft can fly, advance , launch missiles, when the plane flies into the tarmac, the game wins
 ### 2. Card game, soldiers and warriors, according to the distance to determine whether to attack, with blood strips
 
 ## some bugs
